@@ -61,4 +61,7 @@
     <Folder Include="SQL_Script_Collection\DART_Queries" />
     <Folder Include="SQL_Script_Collection\WHSE_Queries" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="SQL_Script_Collection\DART_Queries\search FABC.sql" />
+  </ItemGroup>
 </Project>
