@@ -10,7 +10,10 @@ Declare @Fname as varchar(30)
 Declare @LnamePat as varchar(30)
 Declare @NameParse as int
 --SELECT @NameString = 'SMITH POWSNER,JONAH L'
-SELECT @NameString = 'Whitmer,Finn'
+--SELECT @NameString = 'Whitmer,Finn'
+SELECT @NameString = 'Wenckus,Aidan'
+--SELECT @NameString = 'Aidan,Wenckus'
+
 SELECT @NameParse =Patindex('%,%',@NameString)
 select @Lname = Left(@NameString,@NameParse-1)
 select @Fname = Right(@NameString,Len(@NameString) - @NameParse)
